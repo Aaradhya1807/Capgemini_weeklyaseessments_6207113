@@ -1,4 +1,3 @@
-
 import { test } from "@playwright/test";
 import Signup from "../PageObjectModel/SignUp.page";
 import Login from "../PageObjectModel/LogIn.page";

@@ -36,7 +36,9 @@ class Checkout{
 
     async checkout(){
         await this.checkoutBTN1.click()
+        await expect(this.checkoutBTN2).toBeVisible()
         await this.checkoutBTN2.click()
+        await expect(this.Email).toBeVisible()
         await this.Email.fill(this.data.Email)
         await this.Lname.fill(this.data.Lname)
         await this.Adress.fill("265/31");
